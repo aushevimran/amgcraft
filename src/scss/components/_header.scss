@@ -1,3 +1,6 @@
-.header__logo {
-  color: red;
+.header {
+  height: 100px;
+  &__logo {
+    width: 100px;
+  }
 }

@@ -10,7 +10,7 @@ const Header = () => {
   const list = ["Главная", "О нас", " Услуги", "Этапы работы", "Контакты"];
 
   return (
-    <div className="header__container">
+    <div className="header">
       <div className="header__logo">
         <img src={Logo} alt="Logo" />
       </div>
