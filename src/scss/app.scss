@@ -1,0 +1,12 @@
+@import "./variables";
+@import "./libs/normalize";
+@import "./components/all";
+
+.wrapper {
+  width: calc(100vw - 100px);
+  height: 100%;
+  background-color: #0a0909;
+  margin: 0px auto;
+  border-radius: 10px;
+  max-width: 1400px;
+}
