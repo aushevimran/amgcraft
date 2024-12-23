@@ -1,6 +1,25 @@
 .header {
-  height: 100px;
-  &__logo {
-    width: 100px;
+  height: 100vh;
+}
+
+.header-menu {
+  &__list {
+    align-items: center;
+    margin: 30px;
+  }
+
+  &__item {
+  }
+
+  &__link {
+    color: $white;
+    font-weight: 400;
+    text-decoration: none;
+  }
+
+  &__phone {
+    color: $white;
+    font-weight: 400;
+    text-decoration: none;
   }
 }
