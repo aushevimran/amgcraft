@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "../assets/img/logo.svg";
+import Logo from "../assets/img/logosvg.svg";
 import Telegram from "../assets/img/telegram.svg";
 
 const Header = () => {
