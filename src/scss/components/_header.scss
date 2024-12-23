@@ -5,15 +5,22 @@
 
   background: #aeaeae;
 
-  display: flex;
-  justify-content: space-between;
+  .header__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .header__logo {
   border: 1px solid #000;
+
+  flex-basis: 25%;
 }
 
 .header-menu {
+  flex-basis: 50%;
+
   border: 1px solid #000;
 
   &__list {
@@ -23,10 +30,6 @@
 
     display: flex;
     justify-content: space-between;
-  }
-
-  &__item {
-    // color: aliceblue;
   }
 
   &__link {
@@ -48,5 +51,8 @@
 }
 
 .header-menu__additional-wrap {
+  flex-basis: 25%;
+
   border: 1px solid #000;
+  text-align: center;
 }
