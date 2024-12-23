@@ -8,9 +8,11 @@ import "./scss/app.scss";
 function App() {
   return (
     <div className="wrapper">
+      {/* <div className="content"> */}
       <Header />
       <Main />
       <Footer />
+      {/* </div> */}
     </div>
   );
 }

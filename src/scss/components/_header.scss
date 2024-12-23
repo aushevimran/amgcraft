@@ -1,11 +1,28 @@
 .header {
   height: 100vh;
+  max-width: 1400px;
+  margin: 0 auto;
+
+  background: #aeaeae;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__logo {
+  border: 1px solid #000;
 }
 
 .header-menu {
+  border: 1px solid #000;
+
   &__list {
     align-items: center;
+
     margin: 30px;
+
+    display: flex;
+    justify-content: space-between;
   }
 
   &__item {
@@ -28,4 +45,8 @@
     font-weight: 400;
     text-decoration: none;
   }
+}
+
+.header-menu__additional-wrap {
+  border: 1px solid #000;
 }
