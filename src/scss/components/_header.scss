@@ -9,12 +9,18 @@
   }
 
   &__item {
+    // color: aliceblue;
   }
 
   &__link {
     color: $white;
     font-weight: 400;
     text-decoration: none;
+  }
+
+  &__decoration {
+    text-decoration: underline;
+    color: $white;
   }
 
   &__phone {

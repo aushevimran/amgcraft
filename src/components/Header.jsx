@@ -1,13 +1,14 @@
 import React from "react";
 import Logo from "../assets/img/logo.svg";
 import Telegram from "../assets/img/telegram.svg";
-// import { useState } from "react";
-
-// const [state, setState] = useState(0);
-
-// console.log(list);
 
 const Header = () => {
+  const [activeIndex, setState] = React.useState(0);
+
+  const onClick = (id) => {
+    setState(id);
+  };
+
   const list = ["Главная", "О нас", " Услуги", "Этапы работы", "Контакты"];
 
   return (
@@ -17,9 +18,12 @@ const Header = () => {
       </div>
       <div className="header-menu">
         <ul className="header-menu__list">
-          {list.map((value) => {
+          {list.map((value, i) => {
             return (
-              <li className="header-menu__item">
+              <li
+                onClick={() => onClick(i)}
+                className={activeIndex === i ? "header-menu__decoration" : ""}
+              >
                 <a className="header-menu__link" href="/#">
                   {value}
                 </a>
@@ -31,7 +35,7 @@ const Header = () => {
       <div className="header-menu__additional-wrap">
         <div className="header-menu__additional">
           <a className="header-menu__tg" href="tg://resolve?domain=awg_ru">
-            <img src={Telegram} />
+            <img src={Telegram} alt="telegram" />
           </a>
           <a className="header-menu__phone" href="tel:+74952780708">
             +7 965 888-06-06{" "}
