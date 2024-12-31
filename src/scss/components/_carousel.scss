@@ -1,0 +1,44 @@
+.slider {
+  position: relative;
+  width: 100vw; /* Занимает всю ширину экрана */
+  height: 100vh; /* Занимает всю высоту экрана (по желанию) */
+  overflow: hidden;
+}
+
+.slider-image-container {
+  display: flex;
+  justify-content: center; /* Центрируем содержимое */
+  align-items: center; /* Выравниваем по вертикали */
+  width: 100%; /* Ширина контейнера равна ширине экрана */
+  height: 100%; /* Высота контейнера равна высоте экрана */
+}
+
+.slider-image {
+  width: 100%; /* Картинка растягивается на всю ширину */
+  height: auto; /* Сохраняет пропорции */
+  max-height: 100%; /* Не превышает высоту контейнера */
+  object-fit: cover; /* Масштабирует и обрезает изображение, чтобы заполнить контейнер */
+  opacity: 0; /* Скрываем все изображения по умолчанию */
+  position: absolute; /* Все изображения накладываются друг на друга */
+  top: 0;
+  left: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.slider-image.active {
+  opacity: 1; /* Показываем активное изображение */
+  z-index: 1; /* Поднимаем его над другими */
+}
+
+/* Анимация появления слайдера */
+.slider.hidden {
+  opacity: 0;
+  transform: scale(0.95);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.slider.fade-in {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}

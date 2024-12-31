@@ -1,6 +1,13 @@
 import React from "react";
-import Logo from "../assets/img/logosvg.svg";
+
+import Logo from "../assets/img/logo-removebg.svg";
 import Telegram from "../assets/img/telegram.svg";
+
+import Slider from "../react_slick/slick";
+
+import slide1 from "../assets/img/slide_one.jpg";
+// import slide2 from "../assets/img/slide_two.jpg";
+import slide3 from "../assets/img/slide.png";
 
 const Header = () => {
   const [activeIndex, setState] = React.useState(0);
@@ -10,6 +17,8 @@ const Header = () => {
   };
 
   const list = ["Главная", "О нас", " Услуги", "Этапы работы", "Контакты"];
+
+  const images = [slide3, slide1];
 
   return (
     <div className="content">
@@ -53,6 +62,7 @@ const Header = () => {
           </div>
         </div>
       </div>
+      <Slider images={images} interval={18000} />
     </div>
   );
 };
