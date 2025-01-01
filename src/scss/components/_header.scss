@@ -1,4 +1,9 @@
 .header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+
   position: absolute;
   width: 100%;
   height: 100%;
@@ -11,49 +16,34 @@
   margin: 0 auto;
 
   z-index: 1;
-
-  .header__top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
 }
 
-.header__logo {
-  flex-basis: 25%;
-}
+.header__title {
+  width: 90%;
+  margin: 0 auto;
 
-.header-menu {
-  flex-basis: 50%;
-
-  &__list {
-    align-items: center;
-
-    margin: 30px;
-
-    display: flex;
-    justify-content: space-between;
-  }
-
-  &__link {
-    color: $white;
+  h1 {
+    font-family: "Montserrat", serif;
     font-weight: 400;
-    text-decoration: none;
-  }
-
-  &__decoration {
-    text-decoration: underline;
+    font-size: 2.8rem;
     color: $white;
-  }
 
-  &__phone {
-    color: $white;
-    font-weight: 400;
-    text-decoration: none;
+    text-align: start;
   }
 }
 
-.header-menu__additional-wrap {
-  flex-basis: 25%;
-  text-align: center;
+.header__bottom {
+  display: flex;
+  justify-content: space-around;
+
+  text-align: start;
+
+  flex-basis: 20%;
+
+  p {
+    color: #ffffff;
+    font-size: 18px;
+
+    flex-basis: 300px;
+  }
 }

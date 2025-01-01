@@ -1,0 +1,44 @@
+.header__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  flex-basis: 25%;
+}
+
+.header-menu {
+  flex-basis: 50%;
+
+  &__list {
+    align-items: center;
+
+    margin: 30px;
+
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__link {
+    color: $white;
+    font-weight: 400;
+    text-decoration: none;
+  }
+
+  &__decoration {
+    text-decoration: underline;
+    color: $white;
+  }
+
+  &__phone {
+    color: $white;
+    font-weight: 400;
+    text-decoration: none;
+  }
+}
+
+.header-menu__additional-wrap {
+  flex-basis: 25%;
+  text-align: center;
+}
