@@ -3,6 +3,8 @@ import React from "react";
 import Logo from "../assets/img/logo-removebg.svg";
 import Telegram from "../assets/img/telegram.svg";
 
+import Feedback from "./Feedback";
+
 const HeaderMenu = () => {
   const [activeIndex, setState] = React.useState(0);
 
@@ -38,12 +40,10 @@ const HeaderMenu = () => {
 
       <div className="header-menu__additional-wrap">
         <div className="header-menu__additional">
-          <a className="header-menu__tg" href="tg://resolve?domain=awg_ru">
+          {/* <a className="header-menu__tg" href="tg://resolve?domain=awg_ru">
             <img src={Telegram} alt="telegram" />
-          </a>
-          <a className="header-menu__phone" href="tel:+74952780708">
-            +7 965 888-06-06{" "}
-          </a>
+          </a> */}
+          <Feedback />
         </div>
       </div>
     </div>

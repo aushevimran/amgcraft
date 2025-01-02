@@ -19,8 +19,15 @@
 }
 
 .header__title {
-  width: 90%;
-  margin: 0 auto;
+  width: 55%;
+  margin: 0 8%;
+
+  p {
+    text-align: start;
+    color: #ffffff;
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
 
   h1 {
     font-family: "Montserrat", serif;
@@ -29,6 +36,31 @@
     color: $white;
 
     text-align: start;
+    background: rgba(0, 0, 0, 0.2); /* Полупрозрачный чёрный фон */
+
+    border-radius: 9px;
+  }
+
+  .header__slider-link {
+    text-align: start;
+    font-size: 18px;
+    margin-top: 15px;
+    a {
+      .header__slider-arrow {
+        margin: -3px 23px;
+      }
+
+      .header__slider-arrow:hover {
+        transform: translateX(15px);
+        transition: transform 0.5s;
+      }
+      span {
+        color: #ffffff;
+
+        font-family: "FuturaPT", Arial, sans-serif;
+        font-weight: 200;
+      }
+    }
   }
 }
 
@@ -39,6 +71,12 @@
   text-align: start;
 
   flex-basis: 20%;
+
+  // .line {
+  //   width: 150px;
+  //   height: 1px;
+  //   background-color: #ffffff;
+  // }
 
   p {
     color: #ffffff;
