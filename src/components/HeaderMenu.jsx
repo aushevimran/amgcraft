@@ -1,9 +1,11 @@
 import React from "react";
 
 import Logo from "../assets/img/logo-removebg.svg";
-import Telegram from "../assets/img/telegram.svg";
+// import Telegram from "../assets/img/telegram.svg";
 
 import Feedback from "./Feedback";
+
+import Burger from "../burger/burger";
 
 const HeaderMenu = () => {
   const [activeIndex, setState] = React.useState(0);
@@ -20,7 +22,7 @@ const HeaderMenu = () => {
           <img src={Logo} alt="Logo" />
         </a>
       </div>
-
+      <Burger />
       <div className="header-menu">
         <ul className="header-menu__list">
           {list.map((value, i) => {

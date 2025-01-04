@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .header__logo {
@@ -36,9 +37,17 @@
     font-weight: 400;
     text-decoration: none;
   }
+
+  @media (max-width: 1024px) {
+    display: none;
+  }
 }
 
 .header-menu__additional-wrap {
   flex-basis: 25%;
   text-align: center;
+
+  @media (max-width: 1024px) {
+    display: none;
+  }
 }
