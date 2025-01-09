@@ -5,7 +5,8 @@ import Header from "./components/Header";
 import Main from "./components/Main";
 import Footer from "./components/Footer";
 
-import Services from "./pages/Services/index";
+import Services from "./pages/Services";
+// import Feedback from "./components/Feedback";
 
 import "./scss/app.scss";
 

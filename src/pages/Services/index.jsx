@@ -1,19 +1,9 @@
 import React from "react";
+import Feedback from "../../components/Feedback";
 
 const Services = () => {
   <div class="wrap">
-    <div class="cell">Ячейка 1</div>
-    <div class="cell">Ячейка 2</div>
-    <div class="cell">Ячейка 2</div>
-    <div class="cell">Ячейка 2</div>
-    <div class="cell">Ячейка 2</div>
-    <div class="cell">Ячейка 2</div>
-    <div class="cell">Ячейка 2</div>
-    <div class="cell">Ячейка 2</div>
-    <div class="cell">Ячейка 2</div>
-    <div class="cell">Ячейка 2</div>
-    <div class="cell">Ячейка 2</div>
-    <div class="cell">Ячейка 2</div>
+    <Feedback />
   </div>;
 };
 

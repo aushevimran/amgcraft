@@ -24,7 +24,7 @@ const HeaderMenu = () => {
   return (
     <div className="header__top">
       <div className="header__logo">
-        <a href="#">
+        <a href="/#">
           <img src={Logo} alt="Logo" />
         </a>
       </div>
